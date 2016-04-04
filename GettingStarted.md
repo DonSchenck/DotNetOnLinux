@@ -27,14 +27,14 @@
 `export PATH=$PATH:$DOTNET_HOME`
 
 ### Create and move into a directory for our "Hello world" code
-`mkdir src`
-`mkdir src/helloworld_cli`
-`cd src/helloworld_cli/`
+`mkdir src`  
+`mkdir src/helloworld_cli`  
+`cd src/helloworld_cli/`  
 
 ### Here's the magic; Create a new project, pull down the dependencies, and run it
-`dotnet new`
-`dotnet restore`
-`dotnet run`
+`dotnet new`  
+`dotnet restore`  
+`dotnet run`  
 
 You should see "Hello World!" as console output.
 
@@ -44,7 +44,7 @@ You should see "Hello World!" as console output.
 `cd ~/src/DotNetOnLinux/cli-samples-master/HelloWeb`
 
 ### Restore and run the code
-`dotnet restore`
+`dotnet restore`  
 `dotnet run`  
 
 ## HelloMvc example
