@@ -5,7 +5,7 @@
 ### Prerequisites
 
 1. A system running Red Hat Enterprise Linux
-1. Your system needs to have 'wget' installed. You can assure that by running the following command:
+1. Your system needs to have 'wget' installed. You can assure that by running the following command:  
 `yum install -y wget`
 
 ## Instructions

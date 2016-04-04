@@ -2,7 +2,8 @@
 
 ## Install and test .NET on Linux  
 ### Introduction
-This repository contains instructions and code necessary to get you running .NET code (written in C#) up and running in Linux.  
+This repository contains instructions and code necessary to get you up and running .NET code (written in C#) in Linux.  
+
 These instructions and programs have been tested on Red Hat Enterprise Linux (RHEL).
 
 ### How To Use This Repository
