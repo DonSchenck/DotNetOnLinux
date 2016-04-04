@@ -36,7 +36,10 @@
 `dotnet restore`  
 `dotnet run`  
 
-You should see "Hello World!" as console output.
+You should see a message similar to  
+```Compiling helloworld_cli for .NETStandard,Version=v1.5```
+
+After a successful compile, you should see `Hello World!` as console output.
 
 
 ## HelloWeb example
@@ -46,6 +49,17 @@ You should see "Hello World!" as console output.
 ### Restore and run the code
 `dotnet restore`  
 `dotnet run`  
+
+You should receive the following message:  
+`Now listening on: http://*:5000`  
+`Application started. Press Ctrl+C to shut down.`  
+
+If you are running RHEL with a graphical shell, you can open your browser and point it to `http://localhost:5000` to see the results.  
+If you are running RHEL in a command line environment, or if you are running RHEL inside of the CDK virtual machine (VM), point your browser to the server's IP address. For example, if you are using the CDK, you'll point to `http://10.1.2.2:5000`  
+
+Your browser should show the message "Hello World!".  
+
+Press `Ctrl+C` to terminate the .NET web server.  
 
 ## HelloMvc example
 ### Move to the directory  
