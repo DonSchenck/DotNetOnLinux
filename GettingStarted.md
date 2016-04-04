@@ -19,10 +19,11 @@
 `mkdir ~/dotnet`
 
 ### Unpack the dotnet binaries
-`tar xf dotnet-dev-rhel-x64.latest.tar.gz -C ~/dotnet`
+`tar xf dotnet-dev-rhel-x64.latest.tar.gz -C ~/dotnet --verbose`  
+(Note: The verbose option is shown in order to give you a sense of the scope of the .NET framework)  
 
 ### Add the binaries to our path; now, the dotnet command is ready for use
-`export DOTNET_HOME=$HOME/dotnet`
+`export DOTNET_HOME=$HOME/dotnet`  
 `export PATH=$PATH:$DOTNET_HOME`
 
 ### Create and move into a directory for our "Hello world" code
