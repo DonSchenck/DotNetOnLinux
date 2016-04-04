@@ -40,8 +40,16 @@ You should see "Hello World!" as console output.
 
 ## HelloWeb example
 ### Move to the directory
-`cd ~/src/DotNetOnLinux/cli-samples/HelloWeb`
+`cd ~/src/DotNetOnLinux/cli-samples-master/HelloWeb`
 
 ### Restore and run the code
 `dotnet restore`
-`dotnet run`
+`dotnet run`  
+
+## HelloMvc example
+### Move to the directory  
+`cd ~/src/DotNetOnLinux/cli-samples-master/HelloMvc`  
+
+### Restore and run the code  
+`dotnet restore`  
+`dotnet run`  
