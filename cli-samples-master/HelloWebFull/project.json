@@ -1,0 +1,18 @@
+{
+    "compilationOptions": {
+        "emitEntryPoint": true
+    },
+    "dependencies" : {
+        "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-*",
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-*",
+        "Microsoft.NETCore.Platforms": "1.0.1-*"
+    },
+    "frameworks": {
+        "net451": { }
+    },
+    "runtimes": {
+        "win7-x64": { },
+        "osx.10.11-x64": {},
+        "ubuntu.14.04-x64": {}
+    }
+}
