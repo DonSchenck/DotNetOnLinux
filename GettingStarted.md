@@ -83,10 +83,30 @@ As with the previous example, you'll need to use the appropriate IP address to f
 As with the previous example, you'll need to use the appropriate IP address to form your browser URL. In this case, you should be able to use the following as examples:  
 `http://{your ip address here}:5000/api/products`   
 `http://{your ip address here}:5000/api/products/1`  
- 
+
 
 ## Entity Framework & SQLite example  
-Coming _VERY_ soon. Seriously.  
+### Move to the directory   
+`cd ~/src/DotNetOnLinux/cli-samples-master/EFSQLite`  
+
+### Create the SQLite database we'll be using  
+`sqlite3 RequestHistory.db`  
+
+### Create the database with the empty Table we need  
+[vagrant@rhel-cdk EFSQLite]$ sqlite3 RequestHistory.db
+SQLite version 3.7.17 2013-05-20 00:56:22
+Enter ".help" for instructions
+Enter SQL statements terminated with a ";"
+sqlite> CREATE TABLE Request(
+   ...> RequestId INTEGER PRIMARY KEY,
+   ...> Message TEXT,
+   ...> Processed TEXT
+   ...> );
+sqlite>  
+
+### Restore and run the code  
+`dotnet restore`  
+`dotnet run`  
 
 ### Install the SQLite database  
 `sudo yum install -y sqlite`  

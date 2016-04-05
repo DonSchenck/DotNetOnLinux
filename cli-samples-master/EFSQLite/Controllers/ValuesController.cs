@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using BuildAPI.Models;
+using EFSQLite.Models;
 
 namespace EFSQLite.Controllers
 {
