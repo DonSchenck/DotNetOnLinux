@@ -1,4 +1,4 @@
-﻿using BuildAPI.Models;
+﻿using EFSQLite.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
