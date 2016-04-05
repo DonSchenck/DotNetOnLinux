@@ -70,10 +70,20 @@ Press `Ctrl+C` to terminate the .NET web server.
 `dotnet restore`  
 `dotnet run`  
 
-As with the previous example, you'll need to enter the appropriate IP address. You should see a banner representing the successful execution of an ASP.NET MVC web application.  
+As with the previous example, you'll need to use the appropriate IP address to form your browser URL. You should see a banner representing the successful execution of an ASP.NET MVC web application.  
 
 ## HelloWebApi example  
-Coming *VERY* soon.  
+### Move to the directory  
+`cd ~/src/DotNetOnLinux/cli-samples-master/HelloMvcApi`  
+
+### Restore and run the code  
+`dotnet restore`  
+`dotnet run`  
+
+As with the previous example, you'll need to use the appropriate IP address to form your browser URL. In this case, you should be able to use the following as examples:  
+`http://{your ip address here}:5000/api/products`   
+`http://{your ip address here}:5000/api/products/1`  
+ 
 
 ## Entity Framework & SQLite example  
 Coming _VERY_ soon. Seriously.  
