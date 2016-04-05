@@ -75,5 +75,8 @@ As with the previous example, you'll need to enter the appropriate IP address. Y
 ## HelloWebApi example  
 Coming *VERY* soon.  
 
-## Entity Framework & SQList example  
+## Entity Framework & SQLite example  
 Coming _VERY_ soon. Seriously.  
+
+### Install the SQLite database  
+`sudo yum install -y sqlite`  

@@ -13,7 +13,7 @@ namespace HelloMvcApi
                         .UseContentRoot(Directory.GetCurrentDirectory())
                         .UseDefaultHostingConfiguration(args)
                         .UseIIS()
-                        .UseStartup<Startup>()
+                        .UseStartup<Startup>().UseUrls("http://*:5000")
                         .Build();
 
             host.Run();
