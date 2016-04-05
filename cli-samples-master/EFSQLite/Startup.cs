@@ -24,7 +24,17 @@ namespace EFSQLite
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
+
             app.UseMvc();
+
+            using (var db = new RequestHistoryContext())
+            {
+                db.Database.EnsureCreated();
+            }
         }
     }
 }
