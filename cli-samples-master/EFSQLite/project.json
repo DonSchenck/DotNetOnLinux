@@ -10,7 +10,7 @@
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-rc2-*"
+      "version": "1.0.0-*"
     },
     "Microsoft.NETCore.Platforms": "1.0.1-*",
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-*",
@@ -34,8 +34,7 @@
       "dependencies": {
         "Microsoft.NETCore.Platforms": "1.0.1-*"
       }
-    },
-    "net451": {}
+    }
   },
   "tools": {
     "dotnet-publish-iis": "1.0.0-*",

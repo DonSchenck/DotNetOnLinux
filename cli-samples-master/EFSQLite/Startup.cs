@@ -24,15 +24,15 @@ namespace EFSQLite
                 app.UseDeveloperExceptionPage();
             }
 
-//            app.UseForwardedHeaders(new ForwardedHeadersOptions
-//            {
-//                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-//            });
+            app.UseForwardedHeaders(new ForwardedHeadersOptions
+            {
+                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+            });
 
-//            using (var db = new RequestHistoryContext())
-//            {
-//                db.Database.EnsureCreated();
-//            }
+            using (var db = new RequestHistoryContext())
+            {
+                db.Database.EnsureCreated();
+            }
 
             app.UseMvc();
 
