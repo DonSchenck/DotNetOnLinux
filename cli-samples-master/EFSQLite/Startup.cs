@@ -10,11 +10,6 @@ namespace EFSQLite
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-        }
-
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
-        {
             loggerFactory.AddConsole(LogLevel.Debug);
 
             app.UseStaticFiles();
@@ -24,17 +19,36 @@ namespace EFSQLite
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseForwardedHeaders(new ForwardedHeadersOptions
-            {
-                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
-            });
-
-            app.UseMvc();
-
             using (var db = new RequestHistoryContext())
             {
                 db.Database.EnsureCreated();
             }
+
+            services.AddMvc();
         }
+
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        {
+//            loggerFactory.AddConsole(LogLevel.Debug);
+
+//            app.UseStaticFiles();
+
+//            if (env.IsDevelopment())
+//            {
+//                app.UseDeveloperExceptionPage();
+//            }
+
+//            app.UseForwardedHeaders(new ForwardedHeadersOptions
+//            {
+//                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+//            });
+
+//            app.UseMvc();
+
+//            using (var db = new RequestHistoryContext())
+//            {
+//                db.Database.EnsureCreated();
+//            }
+//        }
     }
 }
