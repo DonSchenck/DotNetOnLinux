@@ -49,6 +49,6 @@ namespace EFSQLite
 //            {
 //                db.Database.EnsureCreated();
 //            }
-//        }
+        }
     }
 }
