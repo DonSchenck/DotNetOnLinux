@@ -29,10 +29,10 @@ namespace EFSQLite
 //                ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
 //            });
 
-            using (var db = new RequestHistoryContext())
-            {
-                db.Database.EnsureCreated();
-            }
+//            using (var db = new RequestHistoryContext())
+//            {
+//                db.Database.EnsureCreated();
+//            }
 
             app.UseMvc();
 
