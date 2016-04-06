@@ -7,5 +7,5 @@ This repository contains instructions and code necessary to get you up and runni
 These instructions and programs have been tested on Red Hat Enterprise Linux (RHEL).
 
 ### How To Use This Repository
-1.  Fork or download this repo.  
+1.  Fork and `git clone` or download this repo.  
 1.  Following the instructions in the document "GettingStarted.md".

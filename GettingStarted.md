@@ -26,6 +26,10 @@
 `export DOTNET_HOME=$HOME/dotnet`  
 `export PATH=$PATH:$DOTNET_HOME`
 
+### Prove your dotnet installation  
+`dotnet --help`  
+This will prove that you have successfully installed the dotnet CLI and provide you with an over of the command available.  
+
 ### Create and move into a directory for our "Hello world" code
 `mkdir src`  
 `mkdir src/helloworld_cli`  
@@ -40,7 +44,6 @@ You should see a message similar to
 ```Compiling helloworld_cli for .NETStandard,Version=v1.5```
 
 After a successful compile, you should see `Hello World!` as console output.
-
 
 ## HelloWeb example
 ### Move to the directory
