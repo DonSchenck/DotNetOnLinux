@@ -45,6 +45,11 @@ You should see a message similar to
 
 After a successful compile, you should see `Hello World!` as console output.
 
+<hr>  
+## Stop! If you are reading this document online...  
+...you will need to download or `git clone` this repo in order to continue. The code referenced from this point forward assumes you have copied this repo to your local machine.  
+<hr>
+
 ## HelloWeb example
 ### Move to the directory
 `cd ~/src/DotNetOnLinux/cli-samples-master/HelloWeb`
@@ -57,9 +62,10 @@ You should receive the following message:
 `Now listening on: http://*:5000`  
 `Application started. Press Ctrl+C to shut down.`  
 
-If you are running RHEL with a graphical shell, you can open your browser and point it to `http://localhost:5000` to see the results.  
-
-If you are running RHEL in a command line environment, or if you are running RHEL inside of the CDK virtual machine (VM), point your browser to the server's IP address. For example, if you are using the CDK, you'll point to `http://10.1.2.2:5000`  
+* If you are running RHEL with a graphical shell, you can open your browser and point it to `http://localhost:5000` to see the results.  
+* If you are running RHEL in a Virtual Machine (VM), choose one of the following to find the correct IP address:  
+ - If you're using the CDK, use `http://10.1.2.2:5000`  
+ - If you're running inside of Hyper-V, use the command `ifconfig`, then run `systemctl stop firewalld` to gain access.  
 
 Your browser should show the message "Hello World!".  
 
