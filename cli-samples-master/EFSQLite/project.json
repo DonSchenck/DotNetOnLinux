@@ -27,11 +27,15 @@
   },
   "frameworks": {
     "netstandardapp1.5": {
-      "imports":"portable-net45+win8",
+      "imports": [
+        "portable-net452+win81",
+        "dnxcore50"
+      ],
       "dependencies": {
-        "Microsoft.NETCore.App": "1.0.0-rc2-*"
-      },
-    }
+        "Microsoft.NETCore.Platforms": "1.0.1-*"
+      }
+    },
+    "net451": {}
   },
   "tools": {
     "dotnet-publish-iis": "1.0.0-*",
