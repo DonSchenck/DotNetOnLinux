@@ -94,20 +94,19 @@ As with the previous example, you'll need to use the appropriate IP address to f
 `http://{your ip address here}:5000/api/products/1`  
 
 
-## Entity Framework & SQLite example  
+## Entity Framework example  
+Note: This directory is so named because it will eventually be an example of using Entity Framework and SQLite together. At this time, the SQLite bits are not ready. Until then, this example will use an In-memory database.  
+
 ### Move to the directory   
 `cd ~/src/DotNetOnLinux/cli-samples-master/EFSQLite`  
-
-### Create the SQLite database we'll be using  
-`sqlite3 RequestHistory.db`  
-
-### Create the database with the empty Table we need  
-`sqlite3 RequestHistory.db`  
-`CREATE TABLE Request(RequestId INTEGER PRIMARY KEY, Message TEXT, Processed TEXT);`  
 
 ### Restore and run the code  
 `dotnet restore`  
 `dotnet run`  
 
-### Install the SQLite database  
-`sudo yum install -y sqlite`  
+### Open the web site in your browser  
+As with the previous example, you'll need to use the appropriate IP address to form your browser URL. For this example, simply append a word or phrase to the end of your URL; It will be saved to a database and the page will refresh with an updated list of the 10 most recent requests -- a request history.  
+
+`http://{your ip address here}:5000/{word or phrase here}`
+
+(If you look a the source code in /Controllers/ValuesController, you can change the number of items to be listed)  
