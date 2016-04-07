@@ -21,16 +21,16 @@ namespace Speakr
         public Startup(IHostingEnvironment env)
         {
             // Set up configuration sources.
-            var builder = new ConfigurationBuilder()
-                .AddJsonFile("appsettings.json")
-                .AddEnvironmentVariables();
+            //var builder = new ConfigurationBuilder()
+            //    .AddJsonFile("appsettings.json")
+            //    .AddEnvironmentVariables();
 
-            if (env.IsDevelopment())
-            {
-                // This will push telemetry data through Application Insights pipeline faster, allowing you to view results immediately.
-                builder.AddApplicationInsightsSettings(developerMode: true);
-            }
-            Configuration = builder.Build();
+            //if (env.IsDevelopment())
+            //{
+            //    // This will push telemetry data through Application Insights pipeline faster, allowing you to view results immediately.
+            //    builder.AddApplicationInsightsSettings(developerMode: true);
+            //}
+            //Configuration = builder.Build();
         }
 
         //public IConfigurationRoot Configuration { get; set; }
