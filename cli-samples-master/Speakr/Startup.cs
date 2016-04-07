@@ -7,7 +7,7 @@
 //using Microsoft.Extensions.Configuration;
 //using Microsoft.Extensions.Logging;
 //using Microsoft.AspNetCore.HttpOverrides;
-//using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -47,14 +47,14 @@ namespace Speakr
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
-            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddConsole(LogLevel.Debug;
             //loggerFactory.AddDebug();
 
             //app.UseApplicationInsightsRequestTelemetry();
 
             if (env.IsDevelopment())
             {
-                app.UseBrowserLink();
+                //                app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
             }
             else
