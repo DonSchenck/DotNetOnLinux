@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using EFSQLite.Models;
+using EFInMemory.Models;
 
-namespace EFSQLite.Controllers
+namespace EFInMemory.Controllers
 {
     public class RequestsController : Controller
     {

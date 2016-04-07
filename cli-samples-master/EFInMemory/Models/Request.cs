@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace EFSQLite.Models
+namespace EFInMemory.Models
 {
     public class Request
     {

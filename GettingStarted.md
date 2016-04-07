@@ -94,11 +94,11 @@ As with the previous example, you'll need to use the appropriate IP address to f
 `http://{your ip address here}:5000/api/products/1`  
 
 
-## Entity Framework example  
-Note: This directory is so named because it will eventually be an example of using Entity Framework and SQLite together. At this time, the SQLite bits are not ready. Until then, this example will use an In-memory database.  
+## Entity Framework InMemory example  
+This example is a simple demonstration of an InMemory database using Entity Framework.  
 
 ### Move to the directory   
-`cd ~/src/DotNetOnLinux/cli-samples-master/EFSQLite`  
+`cd ~/src/DotNetOnLinux/cli-samples-master/EFInMemory`  
 
 ### Restore and run the code  
 `dotnet restore`  

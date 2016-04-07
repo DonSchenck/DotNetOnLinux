@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace EFSQLite
+namespace EFInMemory
 {
     public class HomeController : Controller
     {
