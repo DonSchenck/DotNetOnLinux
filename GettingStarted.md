@@ -102,16 +102,8 @@ As with the previous example, you'll need to use the appropriate IP address to f
 `sqlite3 RequestHistory.db`  
 
 ### Create the database with the empty Table we need  
-[vagrant@rhel-cdk EFSQLite]$ sqlite3 RequestHistory.db
-SQLite version 3.7.17 2013-05-20 00:56:22
-Enter ".help" for instructions
-Enter SQL statements terminated with a ";"
-sqlite> CREATE TABLE Request(
-   ...> RequestId INTEGER PRIMARY KEY,
-   ...> Message TEXT,
-   ...> Processed TEXT
-   ...> );
-sqlite>  
+`sqlite3 RequestHistory.db`  
+`CREATE TABLE Request(RequestId INTEGER PRIMARY KEY, Message TEXT, Processed TEXT);`  
 
 ### Restore and run the code  
 `dotnet restore`  
