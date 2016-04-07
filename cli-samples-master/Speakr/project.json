@@ -28,15 +28,15 @@
       "type": "build"
     },
     "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-*",
-    "Microsoft.ApplicationInsights.AspNet": "1.0.0-rc1",
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Configuration": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final"
+    "Microsoft.ApplicationInsights.AspNet": "1.0.0-*",
+    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-*",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc*",
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc*",
+    "Microsoft.Extensions.Configuration": "1.0.0-rc*",
+    "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc*",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0-rc*",
+    "Microsoft.Extensions.Logging": "1.0.0-rc*",
+    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc*"
   },
   "frameworks": {
     "netstandardapp1.5": {
