@@ -13,6 +13,7 @@ namespace EFSQLite
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 //            optionsBuilder.UseSqlite("Filename=RequestHistory.db");
+            optionsBuilder.UseInMemoryDatabase();
         }
     }
 }
