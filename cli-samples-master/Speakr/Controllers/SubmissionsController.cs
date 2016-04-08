@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using Speakr.Models;
 
 // For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
@@ -14,7 +14,7 @@ namespace Speakr.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            var db = new SubmissionContext();   
+            var db = new SubmissionContext();
             return View(db.Submissions);
         }
         // GET: Submissions/Details/5
