@@ -69,7 +69,7 @@ namespace Speakr
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Submissions}/{action=Index}/{id?}");
             });
         }
 
