@@ -22,14 +22,14 @@ namespace Speakr.Controllers
         {
             if (id == null)
             {
-                return HttpNotFound();
+                //return HttpNotFound();
             }
 
             var _context = new SubmissionContext();
             Submission submission = _context.Submissions.Single(m => m.ID == id);
             if (submission == null)
             {
-                return HttpNotFound();
+                //return HttpNotFound();
             }
 
             return View(submission);
@@ -61,14 +61,14 @@ namespace Speakr.Controllers
         {
             if (id == null)
             {
-                return HttpNotFound();
+                //return HttpNotFound();
             }
 
             var _context = new SubmissionContext();
             Submission submission = _context.Submissions.Single(m => m.ID == id);
             if (submission == null)
             {
-                return HttpNotFound();
+                //return HttpNotFound();
             }
             return View(submission);
         }
@@ -94,14 +94,14 @@ namespace Speakr.Controllers
         {
             if (id == null)
             {
-                return HttpNotFound();
+                //return HttpNotFound();
             }
 
             var _context = new SubmissionContext();
             Submission submission = _context.Submissions.Single(m => m.ID == id);
             if (submission == null)
             {
-                return HttpNotFound();
+                //return HttpNotFound();
             }
 
             return View(submission);
