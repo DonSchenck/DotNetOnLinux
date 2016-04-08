@@ -39,7 +39,7 @@ namespace Speakr.Controllers
         }
 
         // GET: Submissions/Create
-        [Route("/submissions/create")]
+        [Route("/create")]
         [HttpGet()]
         public IActionResult Create()
         {
