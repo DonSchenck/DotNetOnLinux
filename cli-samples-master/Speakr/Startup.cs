@@ -59,7 +59,7 @@ namespace Speakr
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseIISPlatformHandler();
+            //app.UseIISPlatformHandler();
 
             //app.UseApplicationInsightsExceptionTelemetry();
 
