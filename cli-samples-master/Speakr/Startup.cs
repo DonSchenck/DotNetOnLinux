@@ -67,9 +67,12 @@ namespace Speakr
 
             app.UseMvc(routes =>
             {
+              //routes.MapRoute(
+                  //name: "default",
+                  //template: "{controller=Submissions}/{action=Index}/{id?}");
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Submissions}/{action=Index}/{id?}");
+                    template: "{controller}/{action}/{id?}");
             });
         }
 
