@@ -9,18 +9,15 @@ using Speakr.Models;
 
 namespace Speakr.Controllers
 {
-    [Route("/submissions")]
     public class SubmissionsController : Controller
     {
         // GET: /<controller>/
-        [HttpGet()]
         public IActionResult Index()
         {
             var db = new SubmissionContext();
             return View(db.Submissions);
         }
         // GET: Submissions/Details/5
-        [HttpGet("{id}")]
         public IActionResult Details(int? id)
         {
             if (id == null)
@@ -39,8 +36,7 @@ namespace Speakr.Controllers
         }
 
         // GET: Submissions/Create
-        [Route("/create")]
-        [HttpGet()]
+        [HttpGet(), ActionName("Create")]
         public IActionResult Create()
         {
             return View();
