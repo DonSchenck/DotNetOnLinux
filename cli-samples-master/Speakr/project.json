@@ -29,8 +29,7 @@
     "netstandardapp1.5": {
       "imports": [
         "portable-net452+win81",
-        "dnxcore50",
-        "rhel.7.2-x64"
+        "dnxcore50"
       ],
       "dependencies": {
         "Microsoft.NETCore.Platforms": "1.0.1-*"
