@@ -9,6 +9,7 @@ using Speakr.Models;
 
 namespace Speakr.Controllers
 {
+    [Route("/submissions")]
     public class SubmissionsController : Controller
     {
         // GET: /<controller>/
@@ -36,6 +37,7 @@ namespace Speakr.Controllers
         }
 
         // GET: Submissions/Create
+        [Route("/submissions/create")]
         public IActionResult Create()
         {
             return View();
