@@ -1,0 +1,18 @@
+### Disable SELinux
+`sudo setenforce 0`
+
+### Build the Docker image
+`docker build -t dotnetbase .`
+
+### Run the image as BASH shell
+`docker run -it dotnetbase bash`
+
+### Now that you're "inside" the docker container, you can run dotnet commands
+`dotnet --help`
+`mkdir helloworld`
+`cd helloworld`
+`dotnet new`
+`dotnet restore`
+`dotnet run`
+
+You should see "Hello World!" appear on stdout.
