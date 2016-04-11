@@ -12,7 +12,7 @@ namespace HelloWeb
                         .UseContentRoot(Directory.GetCurrentDirectory())
                         .UseDefaultHostingConfiguration(args)
                         .UseIIS()
-                        .UseStartup<Startup>().UseUrls("http:*:5000")
+                        .UseStartup<Startup>().UseUrls("http://*:5000")
                         .Build();
 
             host.Run();
