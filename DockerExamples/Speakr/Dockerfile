@@ -4,6 +4,7 @@ MAINTAINER Don Schenck <don.schenck@gmail.com>
 RUN mkdir /speakr
 WORKDIR speakr
 
+COPY NuGet.Config .
 COPY Controllers .
 COPY Models .
 COPY node_modules .
@@ -22,5 +23,4 @@ COPY Speakr.xproj ./
 COPY Speakr.xproj.user ./
 COPY Startup.cs ./
 
-RUN dotnet restore
-CMD dotnet run
+CMD dotnet restore --configfile NuGet.Config && dotnet run
