@@ -12,7 +12,7 @@ namespace Speakr
                         .UseKestrel()
                         .UseContentRoot(Directory.GetCurrentDirectory())
                         .UseDefaultHostingConfiguration(args)
-                        .UseIIS()
+                        .UseIISIntegration()
                         .UseStartup<Startup>().UseUrls("http://*:5000")
                         .Build();
 
