@@ -17,6 +17,7 @@ namespace Speakr.Controllers
         {
             var db = new SubmissionContext();
             return View(db.Submissions);
+//            return View(db.Submissions.Take(3));
         }
         // GET: Submissions/Details/5
         public IActionResult Details(int? id)
