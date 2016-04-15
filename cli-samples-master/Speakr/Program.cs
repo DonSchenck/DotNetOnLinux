@@ -1,6 +1,7 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
+using Speakr.Models;
 
 namespace Speakr
 {
@@ -8,6 +9,13 @@ namespace Speakr
     {
         public static void Main(string[] args)
         {
+            // Make sure the Database exists
+            using (var db = new SubmissionContext())
+            {
+                db.Database.EnsureCreated();
+            };
+
+            // Build the self-hosting
             var host = new WebHostBuilder()
                         .UseKestrel()
                         .UseContentRoot(Directory.GetCurrentDirectory())
@@ -16,6 +24,7 @@ namespace Speakr
                         .UseStartup<Startup>().UseUrls("http://*:5000")
                         .Build();
 
+            // LAUNCH!
             host.Run();
         }
     }

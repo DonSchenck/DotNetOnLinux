@@ -11,8 +11,9 @@
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
-      "version": "1.0.0-rc2-*"
+      "version": "1.0.0-rc2-23931"
     },
+    "Microsoft.Extensions.Configuration": "1.0.0-rc3-20577",
     "Microsoft.NETCore.Platforms": "1.0.1-*",
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc2-*",
     "Microsoft.Extensions.OptionsModel":"1.0.0-rc1-final",
@@ -28,7 +29,8 @@
       "version": "1.0.0-*",
       "type": "build"
     },
-    "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-*"
+    "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-*",
+    "Microsoft.EntityFrameworkCore.Sqlite": "1.0.0-rc3-20577"
   },
   "frameworks": {
     "netstandardapp1.5": {

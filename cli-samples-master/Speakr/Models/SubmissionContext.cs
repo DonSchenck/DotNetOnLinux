@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore.Sqlite;
 
 namespace Speakr.Models
 {
@@ -12,7 +13,8 @@ namespace Speakr.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseInMemoryDatabase();
+            //            builder.UseInMemoryDatabase();
+            builder.UseSqlite("Filename=submissions.db");
         }
     }
 }
