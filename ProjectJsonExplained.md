@@ -16,7 +16,7 @@ Here's an example:
       "type": "platform",
       "version": "1.0.0-rc2-*"
     },`
-
+</pre>
 This example says "I'm need the .NET Core library". The "platform" type tells the compiler "but don't build it into this application, it will already be available on the machine where this will execute".  
 
 That's a lot of information in just one snippet of JSON, no?  
@@ -37,6 +37,7 @@ The `version` property tells the compiler which version to use. However, this ca
       }
     }
 `
+</pre>
 This section specifies the framework you are targeting for this application. For example, `netcoreapp1.0` means this is a .NET Core 1.0 application. You can specify multiple targets if you wish.  
 
 The `imports` property for a framework defines a list of frameworks that are used by packages created prior to the current framework, but are completely safe to use. In other words, an entry `win81` here means you have a dependency listed that is a package that is compatible with Windows 8.1, but you want it included because you know it will also work with the framework for this application -- in this particular example, it's compatible with .NET Core 1.0.
