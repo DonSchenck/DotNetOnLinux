@@ -11,11 +11,11 @@ One  important entry is the `emitEntryPoint` property. Setting it to `true` mean
 This section defines which Nuget packages you'll need for this application. Think of it as the "References" section of your project in Visual Studio.
 Here's an example:
 <pre>
-`  "dependencies": {
+  "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
       "version": "1.0.0-rc2-*"
-    },`
+    },
 </pre>
 This example says "I'm need the .NET Core library". The "platform" type tells the compiler "but don't build it into this application, it will already be available on the machine where this will execute".  
 
@@ -26,7 +26,7 @@ The `version` property tells the compiler which version to use. However, this ca
 ### frameworks  
 #### (Example)  
 <pre>
-`  "frameworks": {
+  "frameworks": {
     "netstandardapp1.5": {
       "imports": [
         "portable-net452+win81",
@@ -36,7 +36,6 @@ The `version` property tells the compiler which version to use. However, this ca
         "Microsoft.NETCore.Platforms": "1.0.1-*"
       }
     }
-`
 </pre>
 This section specifies the framework you are targeting for this application. For example, `netcoreapp1.0` means this is a .NET Core 1.0 application. You can specify multiple targets if you wish.  
 
