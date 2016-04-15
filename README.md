@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/DonSchenck/DotNetOnLinux.png?label=ready&title=Ready)](https://waffle.io/DonSchenck/DotNetOnLinux)
 # .NET on Linux
 
 ## Install and test .NET on Linux  
