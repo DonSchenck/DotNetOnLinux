@@ -16,7 +16,7 @@
     "Microsoft.Extensions.Configuration": "1.0.0-rc3-20577",
     "Microsoft.NETCore.Platforms": "1.0.1-*",
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc3-20620",
-    "Microsoft.Extensions.OptionsModel":"1.0.0-rc1-final",
+    "Microsoft.Extensions.OptionsModel":"1.0.0-rc3-*",
     "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc3-20620",
     "Microsoft.AspNetCore.Hosting": "1.0.0-rc2-*",
     "Microsoft.AspNetCore.Mvc": "1.0.0-rc3-20620",
@@ -31,7 +31,7 @@
     },
     "Microsoft.EntityFrameworkCore.InMemory": "1.0.0-*",
     "Microsoft.EntityFrameworkCore.Sqlite": "1.0.0-rc3-20620",
-    "Microsoft.Framework.DependencyInjection": "1.0.0-beta1"
+    "Microsoft.Framework.DependencyInjection": "1.0.0-rc3-*"
   },
   "frameworks": {
     "netstandardapp1.5": {
