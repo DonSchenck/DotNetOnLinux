@@ -11,7 +11,7 @@
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "default",
-      "version": "1.0.0-rc2-002416"
+      "version": "1.0.0-rc2-002426"
     },
     "Microsoft.Extensions.Configuration": "1.0.0-rc3-20577",
     "Microsoft.NETCore.Platforms": "1.0.1-*",
