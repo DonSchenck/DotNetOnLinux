@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Framework.DependencyInjection;
 
 namespace Speakr
 {
