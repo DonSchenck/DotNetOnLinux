@@ -26,6 +26,8 @@
 `export DOTNET_HOME=$HOME/dotnet`  
 `export PATH=$PATH:$DOTNET_HOME`
 
+Note: It's a good idea to add the above to lines to your .bash_profile file.  
+
 ### Prove your dotnet installation  
 `dotnet --help`  
 This will prove that you have successfully installed the dotnet CLI and provide you with an over of the command available.  
