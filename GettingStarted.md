@@ -8,6 +8,8 @@
 1. Your system needs to have 'wget' installed. You can assure that by running the following command:  
 `yum install -y wget`
 
+**NOTE:** If you ran the Vagrantfile inside vagrant-machine/ directory, you can go directly to *Prove your dotnet installation* section.
+
 ## Instructions
 ### Get the .NET bits
 `wget https://dotnetcli.blob.core.windows.net/dotnet/beta/Binaries/Latest/dotnet-dev-rhel-x64.latest.tar.gz`

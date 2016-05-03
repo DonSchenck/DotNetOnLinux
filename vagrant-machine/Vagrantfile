@@ -1,0 +1,43 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+# Usage:
+#
+# To use this Vagrantfile, you(optional):
+# * Connected to internal Red Hat network if you need to any package update
+# * Have 'vagrant-registration' plugin installed
+# * Have valid RH employee subscription account
+#
+# NOTE: This Vagrantfile will run all steps listed in GettingStarted.md,
+# except git clone the repo and run the examples.
+# 
+# The public IP address the VM created by Vagrant will get.
+# You will use this IP address to connect to the dotnet examples.
+PUBLIC_ADDRESS=10.1.2.2
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "cdk2"
+  config.vm.provider "virtualbox" do |v, override|
+    v.memory = 1024
+    v.cpus   = 2
+    v.customize ["modifyvm", :id, "--ioapic", "on"]
+    v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  end
+
+  config.vm.provider "libvirt" do |v, override|
+    v.driver = "kvm"
+    v.memory = 1024
+    v.cpus   = 2
+  end
+
+  config.vm.network "private_network", ip: "#{PUBLIC_ADDRESS}"
+
+  config.vm.define :dotnet do |dotnet|
+    dotnet.vm.hostname = "dotnet"
+
+    dotnet.vm.provision "ansible" do |ansible|
+      ansible.playbook = "dotnet.yml"
+      ansible.verbose = "vvvv"
+    end
+  end
+end
