@@ -23,6 +23,7 @@ Follow the links at redhatloves.net
 Move to your CDK folder and run `vagrant box add --name cdkv2`  
 
 ### Start the VM, move into it, and install dotnet  
+`cd vagrant-machine`
 `vagrant up`  
 `vagrant ssh`  
 
