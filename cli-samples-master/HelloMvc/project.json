@@ -3,14 +3,14 @@
         "wwwroot",
         "Views"
     ],
-    "compilationOptions": {
+    "buildOptions": {
         "preserveCompilationContext": true,
         "emitEntryPoint": true
     },
     "dependencies" : {
         "Microsoft.NETCore.App": {
             "type": "platform",
-            "version": "1.0.0-rc2-23931"
+            "version": "1.0.0-rc2-24008"
         },
         "Microsoft.Extensions.Logging.Console": "1.0.0-*",
         "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0-rc2-*",
@@ -27,10 +27,6 @@
           "portable-net45+wp80+win8+wpa81+dnxcore50"
         ]
       }
-    },
-
-    "tools": {
-      "dotnet-publish-iis": "1.0.0-*"
     },
     "scripts": {
       "postpublish": "dotnet publish-iis --publish-folder %publish:OutputPath%"

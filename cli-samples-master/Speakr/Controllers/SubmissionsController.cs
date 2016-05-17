@@ -16,8 +16,8 @@ namespace Speakr.Controllers
         public IActionResult Index()
         {
             var db = new SubmissionContext();
-            return View(db.Submissions.OrderBy(s => s.SessionTitle).OrderBy(s => s.ConferenceName));
-//            return View(db.Submissions.Take(10));
+//            return View(db.Submissions.OrderBy(s => s.SessionTitle).OrderBy(s => s.ConferenceName));
+            return View(db.Submissions.Take(20));
         }
         // GET: Submissions/Details/5
         public IActionResult Details(int? id)
