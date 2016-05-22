@@ -17,7 +17,7 @@ namespace Speakr.Controllers
         {
             var db = new SubmissionContext();
 //            return View(db.Submissions.OrderBy(s => s.SessionTitle).OrderBy(s => s.ConferenceName));
-            return View(db.Submissions.Take(20));
+            return View(db.Submissions.Take(200));
         }
         // GET: Submissions/Details/5
         public IActionResult Details(int? id)
@@ -53,6 +53,7 @@ namespace Speakr.Controllers
                 var _context = new SubmissionContext();
                 _context.Submissions.Add(submission);
                 _context.SaveChanges();
+                
                 PerformanceExample.AddALot();
                 return RedirectToAction("Index");
             }
