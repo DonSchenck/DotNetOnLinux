@@ -15,7 +15,7 @@ namespace Speakr.Models
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //            builder.UseInMemoryDatabase();
-            string dbconn = System.Environment.GetEnvironmentVariable("DBConnectionString");
+            string dbconn = System.Environment.GetEnvironmentVariable("SPEAKR_DBCONN");
             //optionsBuilder.UseSqlite(dbconn); // example "filename=submissions.db"
             optionsBuilder.UseSqlServer(dbconn);
         }

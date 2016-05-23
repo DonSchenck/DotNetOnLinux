@@ -53,6 +53,7 @@ namespace Speakr.Controllers
                 var _context = new SubmissionContext();
                 _context.Submissions.Add(submission);
                 _context.SaveChanges();
+                PerformanceExample.AddALot();
                 return RedirectToAction("Index");
             }
             return View(submission);
