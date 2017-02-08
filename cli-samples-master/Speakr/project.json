@@ -1,32 +1,43 @@
 ﻿{
-  "content": [
+  "publishOptions": {
+  "include": [
     "wwwroot",
-    "Views"
-  ],
+    "**/*.cshtml",
+    "appsettings.json",
+    "Web.config"
+    ]
+  },
+
   "version": "1.0.0",
-  "compilationOptions": {
+  "buildOptions": {
     "preserveCompilationContext": true,
     "emitEntryPoint": true
   },
+
   "dependencies": {
     "Microsoft.NETCore.App": {
-      "type": "platform",
-      "version": "1.0.0"
+//      "type": "platform",
+      "version": "1.1.0"
     },
   "Microsoft.AspNetCore.Diagnostics":"1.0.0",
   "Microsoft.AspNetCore.Mvc": "1.0.0",
   "Microsoft.AspNetCore.Server.IISIntegration": "1.0.0",
   "Microsoft.AspNetCore.Server.Kestrel": "1.0.0",
   "Microsoft.AspNetCore.StaticFiles":"1.0.0",
-  "Microsoft.DiaSymReader.Native":"1.3.3",
+  "Microsoft.DiaSymReader.Native":"1.4.0",
   "Microsoft.EntityFrameworkCore": "1.0.0",
   "Microsoft.EntityFrameworkCore.Sqlite":"1.0.0",
   "Microsoft.EntityFrameworkCore.SqlServer":"1.0.0",
   "Microsoft.Extensions.Logging.Console": "1.0.0",
   "System.Runtime.Serialization.Primitives":"4.1.1"
   },
+
+  "runtimes" : {
+    "rhel.7.2-x64": {}
+  },
+
   "frameworks": {
-    "netcoreapp1.0": {
+    "netcoreapp1.1": {
       "imports": [
         "portable-net452+win81"
     ]
