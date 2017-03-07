@@ -23,7 +23,7 @@ namespace Speakr
 
             app.UseStaticFiles();
 
-            loggerFactory.AddProvider(new EFLogging.MyLoggerProvider());
+            //loggerFactory.AddProvider(new EFLogging.MyLoggerProvider());
             
             app.UseMvc(routes =>
             {
